@@ -1,0 +1,16 @@
+{
+  "name": "anthony",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss:compile-index": "sass scss/main.scss:css/styles.css",
+    "scss:watch--index": "sass --watch scss/main.scss:css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
