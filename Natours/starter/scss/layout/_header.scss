@@ -11,9 +11,10 @@
   background-size: cover; /* makes background image to fit in the box of the viewport */
   background-position: top; /* make the top of the image always stay on top of the container */
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
   &__logo-box {
     position: absolute;
     top: 4rem;
