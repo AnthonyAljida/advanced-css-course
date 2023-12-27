@@ -1,0 +1,45 @@
+@use "./base" as *;
+.footer {
+  grid-column: 2/12;
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1/12;
+  }
+  padding: 8rem;
+  background-color: $color-secondary;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  &__link:link,
+  &__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    font-family: $font-display;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem;
+    transition: all 0.2s;
+  }
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, 0.05);
+    transform: translateY(-3px);
+  }
+  &__item {
+    flex: 1;
+  }
+}
+.copyright {
+  font-size: 1.4rem;
+  color: $color-grey-light-2;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
+}

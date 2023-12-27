@@ -1,0 +1,6 @@
+@use "./base" as *;
+
+@mixin heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
